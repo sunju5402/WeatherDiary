@@ -34,7 +34,7 @@ public class JpaMemoRepositoryTest {
 	@Test
 	void findByIdTest() {
 	    // given
-		Memo newMemo = new Memo(11, "jpa");
+		Memo newMemo = new Memo(11, "jpa"); // id 어떤 것을 넣어도 상관없음.
 	    // when
 		Memo memo = jpaMemoRepository.save(newMemo);
 		// then
