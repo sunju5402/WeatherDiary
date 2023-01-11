@@ -36,3 +36,4 @@ application-security.properties
 
 ### VS Code ###
 .vscode/
+logs

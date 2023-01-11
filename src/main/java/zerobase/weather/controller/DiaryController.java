@@ -23,7 +23,7 @@ public class DiaryController {
 
 	@PostMapping("/create/diary")
 	void createDiary(
-		@RequestParam @DateTimeFormat(iso = ISO.DATE) LocalDate date
+		@RequestParam(required = false) @DateTimeFormat(iso = ISO.DATE) LocalDate date
 		, @RequestBody String text) {
 		diaryService.createDiary(date, text);
 	}
