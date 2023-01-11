@@ -14,7 +14,7 @@ import zerobase.weather.domain.Memo;
 import zerobase.weather.repository.JpaMemoRepository;
 
 @SpringBootTest
-@Transactional
+@Transactional // test code에서는 commit을 안시킴. 다 rollback시킴.
 public class JpaMemoRepositoryTest {
 
 	@Autowired
