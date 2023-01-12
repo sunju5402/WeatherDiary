@@ -40,7 +40,6 @@ public class JpaMemoRepositoryTest {
 		// then
 		Optional<Memo> result = jpaMemoRepository.findById(memo.getId());
 		assertEquals(result.get().getText(), "jpa");
-
 	}
 
 
