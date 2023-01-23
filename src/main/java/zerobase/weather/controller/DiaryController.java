@@ -23,7 +23,7 @@ public class DiaryController {
 
 	private final DiaryService diaryService;
 
-	@ApiOperation(value = "일기 텍스트오 ㅏ날씨를 이용해서 DB에 일기 저장", notes = "노트 예시")
+	@ApiOperation(value = "일기 텍스트와 날씨를 이용해서 DB에 일기 저장", notes = "노트 예시")
 	@PostMapping("/create/diary")
 	void createDiary(
 		@RequestParam(required = false) @DateTimeFormat(iso = ISO.DATE) @ApiParam(value = "날짜 형식 : yyyy-MM-dd", example = "2020-02-02") LocalDate date
